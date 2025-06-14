@@ -1,0 +1,9 @@
+.epro--top-header{
+    height: 5vh;
+    background-color: rgb(31, 31, 29);
+    text-align: center;
+    color:whitesmoke;
+    padding-top: 1.5vh;
+    font-size: 12px;
+    font-weight: bold;
+}
