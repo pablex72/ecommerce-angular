@@ -12,3 +12,9 @@
 body{
     font-size: 'Montserrat', sans-serif;
 }
+
+a{
+    text-decoration: none;
+    padding: 0 10px;
+    color: rgb(44, 42, 40);
+}
