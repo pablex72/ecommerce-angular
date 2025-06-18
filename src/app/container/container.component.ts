@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  selector: 'app-container',
+  templateUrl: './container.component.html',
+  styleUrls: ['./container.component.css']
 })
-export class ProductListComponent {
+export class ContainerComponent {
   // name = "Pedro P";
 
   addToCart:number = 0;
@@ -41,4 +41,6 @@ export class ProductListComponent {
   }
 
   listOfString: string[] = ['Mark', 'John', 'Steve'];
+
+  
 }
