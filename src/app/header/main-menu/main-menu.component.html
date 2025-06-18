@@ -1,6 +1,10 @@
-<div class="epro-menu">
+<!-- <div class="epro-menu">
   <a href="#">Home</a>
   <a href="#">Products</a>
   <a href="#">About</a>
   <a href="#">Contact</a>
+</div> -->
+
+<div class="epro-menu">
+  <a *ngFor="let itemMenu of menuElements" href="#">{{ itemMenu }}</a>
 </div>
