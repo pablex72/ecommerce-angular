@@ -1,5 +1,8 @@
 <div class="epro--search--product">
-    <input class="epro-search-product-input" [(ngModel)]="searchText">
-    <button class="btn btn-search">Search</button>
+  <input class="epro-search-product-input" [(ngModel)]="searchText" />
+  <button class="btn btn-search">Search</button>
 </div>
-<div class="epro-search-result-for"><p><strong>Search result for:</strong>{{ searchText }}</p></div>
+<div class="epro-search-result-for">
+  <p *ngIf="searchText != ''"><strong>Search result for:</strong>{{ searchText }}
+  </p>
+</div>
