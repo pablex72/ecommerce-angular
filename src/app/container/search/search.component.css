@@ -25,6 +25,15 @@
     color: #fff;
 }
 
+.btn-search-disabled{
+    padding: 12px 30px;
+    background-color: #dedede;
+    margin-left: -1px;
+    color: aquamarine;
+    border: #dedede 1px solid;
+    cursor: not-allowed;
+}
+
 .epro-search-result-for{
     margin: 20px auto;
     padding: 10px 140px;
