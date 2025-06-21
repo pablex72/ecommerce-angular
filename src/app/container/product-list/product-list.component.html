@@ -1,3 +1,4 @@
+<app-filter [all]="totalProductCount" [inStock]="totalProductInStock" [outOfStock]="totalOutOfStock"></app-filter>
 <div class="epro--products--container">
   <app-product *ngFor="let prod of products" [product]="prod"></app-product>
 </div>

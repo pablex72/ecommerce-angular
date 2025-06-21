@@ -599,4 +599,10 @@ export class ProductListComponent {
     },
   ];
 prod: any;
+
+  totalProductCount = this.products.length;
+
+  totalProductInStock = this.products.filter( p => p.is_in_inventory === true).length;
+
+  totalOutOfStock = this.products.filter( p => p.is_in_inventory === false).length;
 }
