@@ -15,4 +15,6 @@ export class FilterComponent {
   
   @Input()
   outOfStock: number = 0;
+
+  selectedGilterRadioButton: string = 'all';
 }
