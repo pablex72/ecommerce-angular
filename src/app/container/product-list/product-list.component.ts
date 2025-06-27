@@ -605,4 +605,11 @@ prod: any;
   totalProductInStock = this.products.filter( p => p.is_in_inventory === true).length;
 
   totalOutOfStock = this.products.filter( p => p.is_in_inventory === false).length;
+
+  selectedFilterRadioButton: string = 'all';
+
+  onFilterChanged(value : string){
+    
+    this.selectedFilterRadioButton = value; 
+  }
 }

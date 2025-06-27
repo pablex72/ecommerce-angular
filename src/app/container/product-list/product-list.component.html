@@ -1,4 +1,11 @@
-<app-filter [all]="totalProductCount" [inStock]="totalProductInStock" [outOfStock]="totalOutOfStock"></app-filter>
+<app-filter
+  [all]="totalProductCount"
+  [inStock]="totalProductInStock"
+  [outOfStock]="totalOutOfStock"
+  (selectedFilterRadioButtonChanged)="onFilterChanged($event)"
+></app-filter>
 <div class="epro--products--container">
-  <app-product *ngFor="let prod of products" [product]="prod"></app-product>
+  <div *ngFor="let prod of products">
+    <app-product [product]="prod" *ngIf="selectedFilterRadioButton === 'all' || prod.is_in_inventory.toString() === selectedFilterRadioButton"></app-product>
+  </div>
 </div>
