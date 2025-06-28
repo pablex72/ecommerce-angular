@@ -18,9 +18,9 @@
   <button (click)="decrementCartValue()">-</button>
   <span>{{ addToCart }}</span>
   <button (click)="incrementCartValue()">+</button>
-  <app-search></app-search>
+  <app-search (searchTextChanged)="setSearchText($event)"></app-search>
   <div *ngFor="let item of listOfString">
     <p>Current element of array is : {{item}}</p>
   </div>
-  <app-product-list></app-product-list>
+  <app-product-list [searchText]="searchText"></app-product-list>
 </div>
