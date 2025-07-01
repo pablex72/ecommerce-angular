@@ -23,5 +23,5 @@
     <p>Current element of array is : {{item}}</p>
   </div>
   <app-product-list [searchText]="searchText" #productListComponent></app-product-list>
-  <product-detail *ngIf="productListComponent.selectedProduct"></product-detail>
+  <product-detail *ngIf="productListComponent.selectedProduct" [productListComp]="productListComponent"></product-detail>
 </div>
