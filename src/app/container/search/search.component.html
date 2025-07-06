@@ -1,7 +1,7 @@
 <div class="epro--search--product">
   <!-- <input class="epro-search-product-input" [(ngModel)]="searchText" (input)="onSearchTextChanged()"/> -->
   <input class="epro-search-product-input" #searchInput />
-  <button class="btn btn-search" (click)="updateSearchText(searchInput)">Search</button>
+  <button class="btn btn-search" (click)="updateSearchText()">Search</button>
 </div>
 <div class="epro-search-result-for">
   <p *ngIf="searchText != ''"><strong>Search result for:</strong>{{ searchText }}
