@@ -6,11 +6,17 @@ import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent {
-  @ViewChildren('inputEl') inputElements: QueryList<ElementRef>;
+
+  title = 'angular-view-children';
+  fullName : string = '';
+
+  @ViewChildren('inputEl', {}) inputElements: QueryList<ElementRef>;
 
   show() {
+    let name = ''
     this.inputElements.forEach((el) => {
-      console.log(el.nativeElement.value);
+      name += el.nativeElement.value + ''
     });
+    this.fullName = name.trim()
   }
 }
