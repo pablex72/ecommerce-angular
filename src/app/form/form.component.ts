@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-form',
@@ -6,9 +6,11 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent {
-  @ViewChild('inputEl') inputElements: ElementRef;
+  @ViewChildren('inputEl') inputElements: QueryList<ElementRef>;
 
   show() {
-    console.log(this.inputElements.nativeElement);
+    this.inputElements.forEach((el) => {
+      console.log(el.nativeElement.value);
+    });
   }
 }
