@@ -1,5 +1,9 @@
 <h2>Template NG model</h2>
-<ng-template>
+<ng-template #myTemplate>
     <h3>This is a template</h3>
     <p>This is an example parahraph to understand ng-template</p>
 </ng-template>
+
+<!-- ng template outlet directive -->
+
+<div *ngTemplateOutlet="myTemplate"></div>

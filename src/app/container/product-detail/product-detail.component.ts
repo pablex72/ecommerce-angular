@@ -12,7 +12,7 @@ export class ProductDetailComponent {
   @Input() productListComp: ProductListComponent = undefined;
     product: Product = this.productListComp.selectedProduct;
 
-    gnOnInit(){
+    ngOnInit(){
       this.product = this.productListComp.selectedProduct; 
     }
 }
